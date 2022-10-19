@@ -1,0 +1,347 @@
+/* 1. Selector
+tag selector - p, h1, div, span , form, table
+ID- #, Class - ., psuedoSelectors
+2. Declaration Block 
+{
+    color: red;
+    font-size: 20px;
+}
+
+*/
+/* colors, background-colors- hex codes- ff 00, rgb, rgba */
+
+
+/* #first{
+    color: green;
+}
+#second{
+    color: brown;
+}
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+} */
+/* h1,h2,p{
+    color: blue;
+}
+
+.blue, .red{
+    background-color: aqua;
+} */
+/* .test p, h1{
+    color: blue;
+} */
+
+/* Typography - fontsize- px, em, rem %, fontweight, 
+fontstyle,ntext-decoration,text-transform  fontfamily, letter-spacing, line-height wordspacing tes-align */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+/* .test h2 {
+    font-size: 50px;
+    font-weight: 900;
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 20px;
+    text-align: center;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    word-spacing: 20px;
+}
+.last p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 20px;
+    text-decoration: line-through;
+
+}
+a{
+    font-size: larger;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ */
+
+/* html{
+    color: aqua;
+}
+
+body{
+    background-color: antiquewhite;
+} */
+
+/* *{
+    color: aqua;
+    background-color: green;
+    
+} */
+/* width height */
+
+.red{
+    background-color: red;
+    width: 500px;
+    height: 400px;
+}
+
+.blue{
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+}
+/* 
+comments 
+abs- px
+rel- em, rem
+1em = ?px - realtive to the parent element
+1rem = 16px - relative to the root/browser
+browser
+1em= 10px
+*/
+/* .test{
+    font-size: 10px;
+}
+.rel{
+    font-size: 2rem;
+}
+.rel2{
+    font-size: 2em;
+} */
+/* CSS BOX MODEL- border-wsc, padding TRBL, margin, outline */
+/* .first{
+    width: 90px;
+    border-style: solid ;
+    border-color: aqua;
+    border-width: 10px;
+    border-radius: 20px;
+    padding: 5px 10px ;
+    margin: 20px 50px 40px 10px;
+    margin: auto;
+}
+.second{
+    width: 200px;
+    height: 200px;
+    border: 6px solid red;
+}
+.third{
+    width: 300px;
+    height: 300px;
+    background-color: beige;
+    border-top: 5px solid green;
+}
+.fourth{
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius: 100px;
+
+} */
+/* a{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: chartreuse;
+    border-radius: 7px;   
+} */
+/* #one{
+    border: 0.3rem solid #509fb6;
+}
+#two{
+    outline-width: 0.3rem;
+    outline-color: #509fb6;
+    outline-style: solid;
+    outline: 5px solid red;
+    outline-offset: -10px;
+}
+img{
+    width: 500px;
+    height: 400px;
+    border-radius: 30px;
+} */
+/* DISPLAY  block inline inline-block*/
+/* h1{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+}
+a{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    border: 1px solid blue;
+    text-align: center;
+    margin: auto;
+    margin-left: 20px;
+    cursor: pointer;
+} */
+/* #google{
+    display: inline-block;
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+
+} */
+
+/* BACKGROUND-image, Linear gradient */
+/* CSS FLEXBOX
+CSS GRID
+POSITION- static, fixed, sticky, absolute, relative
+top, left, bottom right
+PSUEDOCLASSES
+*/
+/* ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: green;
+}
+ul li a{
+    text-decoration: none;
+    color: red;
+}
+ol li{
+    list-style-type: lower-greek;
+}
+.one, .two, .five, .four{
+    width: 500px;
+    height: 100px;
+    border: 2px solid red;
+    position: static;
+}
+
+.two{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.navbar{
+    border: 2px solid blue;
+    position: sticky;
+    top: 0;
+    background-color: black;
+
+}
+.content{
+    background-color: green;
+    color: white;
+    border: 2px solid;
+    height:200px;
+    overflow-y: scroll;
+}
+.header{
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+.four{
+    position: relative;
+    left: 60px;
+    top: 30px;
+    bottom: 40px;
+ 
+}
+.rel{
+    border: 1px solid blue;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.abs{
+    border: 1px solid green;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+}
+#fr{
+    border: 1px solid green;
+    width: 400px;
+    height: 300px;
+    box-shadow: 2px 2px rgb(86, 86, 86);
+
+}
+.marg{
+    margin-top: 10px;
+    border: 1px solid green;
+} */
+/* CSS FLEXBOX-flex, align-items, order justify-content */
+.flex div{
+    border: 1px solid green;
+}
+.flex{
+    border: 2px solid red;
+    display: flex;
+    align-items: stretch;
+}
+.one{
+    flex: 1;
+    order: 3;
+}
+.two{
+    flex: 2;
+    order: 1;
+}
+.three{
+    flex: 1;
+    order: 2;
+}
+.flex-2{
+    margin-top: 30px;
+    display: flex;
+    border: 1px solid blue;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.flex-2 div{
+    border: 1px solid grey;
+    /* width: 20%; */
+    flex-basis: 20%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    width: 70vw;
+    height: 70vh;
+    border: 1px solid red;
+    background: url(../images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: relative; */
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+    /* margin: 0 auto; */
+    /* position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/* nav a{
+    color: blue;
+} */
+
+
+
+
